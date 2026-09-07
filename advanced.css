@@ -1,0 +1,156 @@
+Body { background-color: #000000;
+}
+.detailed-status {
+    background: rgba(50,50,50,0.5);
+backdrop-filter: blur(30px) saturate(125%);
+}
+.column>.scrollable {
+    background: none;
+}
+.scrollable {
+    margin-bottom: 4rem;
+}
+.column-header {
+    background: none;}
+.detailed-status__action-bar {
+    background: none;}
+.column-header__button {
+    background: none!important;}
+.tabs-bar__wrapper, .column-back-button {
+background: rgba(50,50,50,0.5);
+    backdrop-filter: blur(30px) saturate(125%);
+}
+.account__header {
+    background: none!important;
+}
+.empty-column-indicator, .follow_requests-unlocked_explanation {
+background: none;
+}
+
+.ui__header__logo svg, .column-link--logo svg {display: none;}
+.ui__header__logo:after, .column-link--logo:after {
+    content: 'Lein Social';
+    color: #fff;
+    font-size: 1rem;
+font-weight: 700;
+
+}
+
+.ui__header__logo, .column-link--logo {
+text-decoration: none;
+}
+
+/* add labels to action bar 
+.status__action-bar button:after {
+content: attr(title); 
+ font-size: 0.5rem;
+    text-align: center;
+    text-wrap: balance;
+    word-wrap: break-word;
+    line-height: 0.6rem;
+}
+*/
+
+/* remove irrelevant buttons */
+.column-link[Title="Local"], .column-link[Title="Private mentions"], .column-link[Title="Federated"] {display: none;}
+
+/* scroll bar customization 
+::-webkit-scrollbar {
+  width: 16px;
+  border: 5px solid white;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b0b0b0;
+  background-clip: padding-box;
+  border: 0.05em solid #eeeeee;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #bbbbbb;
+}
+/* Buttons 
+::-webkit-scrollbar-button:single-button {
+  background-color: #bbbbbb;
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+}
+/* Up 
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #555555 transparent;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #777777 transparent;
+}
+/* Down 
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 8px 8px 0 8px;
+  border-color: #555555 transparent transparent transparent;
+}
+
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: #777777 transparent transparent transparent;
+}
+*/
+
+/* make space for publish button to appear */
+.compose-form .compose-form__publish {
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1174px) {
+.layout-single-column .ui__header {
+    background: none!important;
+backdrop-filter: blur(30px) saturate(125%);
+}
+.columns-area__panels__pane--navigational .navigation-panel {
+background: none!important;
+}
+}
+
+@media screen and (max-width: 889px) {
+.columns-area__panels__pane--navigational .column-link span, .columns-area__panels__pane--navigational .list-panel {
+    display: block;
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.columns-area__panels__pane--navigational .column-link span, .columns-area__panels__pane--navigational .list-panel {
+    display: block;
+    font-size: 0.5rem;
+    text-align: center;
+    text-wrap: balance;
+    word-wrap: break-word;
+    line-height: 0.8rem;
+margin-top: 3px;
+}
+
+.columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
+    width: 58px!important;
+backdrop-filter: blur(30px) saturate(125%);
+}
+.column-link {padding-left: 0px; padding-right: 0px; 
+padding-top: 7px; padding-bottom: 7px;
+text-align: center;}
+.column-link__icon {
+    -webkit-margin-end: 0px;
+    margin-inline-end: 0px;
+}
+/* toolbar moved to bottom */
+.ui__header {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+top: unset;
+}
+.tabs-bar__wrapper
+{
+    top: 0px;
+}
+
+}
